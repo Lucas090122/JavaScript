@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise_1-3</title>
+</head>
+<body>
+<p id="sum"></p>
+<p id="product"></p>
+<p id="average"></p>
+<script>
+    const integer_1 = parseInt(prompt('Please enter first integer:'));
+    const integer_2 = parseInt(prompt('Please enter second integer:'));
+    const integer_3 = parseInt(prompt('Please enter third integer:'));
+    let sum = integer_1 + integer_2 + integer_3;
+    let product = integer_1 * integer_2 * integer_3;
+    let average = sum / 3
+    document.querySelector('#sum').innerHTML = 'The sum is ' + sum;
+    document.querySelector('#product').innerHTML = 'The product is ' + product;
+    document.querySelector('#average').innerHTML = 'The average is ' + average;
+</script>
+</body>
+</html>
