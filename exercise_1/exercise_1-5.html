@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise_1-5</title>
+</head>
+<body>
+<p id="year"></p>
+<script>
+    const year = prompt("Please enter a year.");
+    function leap(num) {
+      if (num % 100 === 0) {
+        if (num % 400 === 0) {
+          result = " is a leap year.";
+        } else {
+          result = " is not a leap year.";
+        }
+      } else if (num % 4 === 0) {
+        result = " is a leap year.";
+      } else {
+        result = " is not a leap year.";
+      }
+      return result;
+    }
+    let judge = leap(year);
+    document.querySelector('#year').innerHTML = year + judge;
+</script>
+</body>
+</html>
