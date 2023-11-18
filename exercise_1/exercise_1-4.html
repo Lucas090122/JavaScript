@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise_1-4</title>
+</head>
+<body>
+<p id="name"></p>
+<script>
+    const name = prompt("Say your name!");
+    function sorting() {
+      i = Math.random() * 4;
+      if (i < 1) {
+        j = "Gryffindor";
+      } else if (i < 2) {
+        j = "Slytherin";
+      } else if (i < 3) {
+        j = "Hufflepuff";
+      } else {
+        j = "Ravenclaw";
+      }
+      return j;
+    }
+    let room = sorting();
+    document.querySelector('#name').innerHTML = name + ", you are " + room + ".";
+</script>
+</body>
+</html>
