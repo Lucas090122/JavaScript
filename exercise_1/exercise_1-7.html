@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise_1-7</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    const times = prompt('How many dice rolls?');
+    function dice(num) {
+      let result = 0;
+      for (let i = 0; i < num; i++) {
+        let dice_result = Math.floor(Math.random() * 6 + 1);
+        result = result + dice_result;
+      }
+      return result;
+    }
+    let finial_result = dice(times);
+    document.querySelector('#result').innerHTML = 'The result is ' + finial_result + '.'
+</script>
+</body>
+</html>
