@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise_1-8</title>
+</head>
+<body>
+<ul id="list"></ul>
+<script>
+    const start = parseInt(prompt('Enter start year'));
+    const  end = parseInt(prompt('Enter end year'));
+    let year_list = [];
+    for (let year = start; year <= end; year++) {
+      if (year % 100 === 0) {
+        if (year % 400 === 0) {
+          year_list.push(year);
+        }
+      } else if (year % 4 === 0) {
+        year_list.push(year);
+      }
+    }
+    for (let years of year_list) {
+      document.getElementById('list').appendChild(document.createElement('li')).textContent = years;
+    }
+</script>
+</body>
+</html>
