@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise_1-9</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    const number = parseInt(prompt('Enter a number'));
+    let result;
+    for (let i = 1; i <= number; i++) {
+      if (number % i === 0 && number / i !== number && number / i !== 1) {
+        result = `${number} is not a prime number.`;
+        break;
+      } else {
+        result = `${number} is a prime number.`;
+      }
+    }
+    document.querySelector('#result').innerHTML = result;
+</script>
+</body>
+</html>
