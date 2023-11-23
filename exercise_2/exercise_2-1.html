@@ -6,14 +6,13 @@
 </head>
 <body>
 <script>
-    const number_1 = prompt('First number')
-    const number_2 = prompt('Second number')
-    const number_3 = prompt('Third number')
-    const number_4 = prompt('Fourth number')
-    const number_5 = prompt('Fifth number')
-    let number_array = [number_1, number_2, number_3, number_4, number_5]
+    let number_array = [];
+    for (let i = 0; i < 5; i++) {
+      let number = prompt(`Enter number ${i + 1}`);
+      number_array.push(number)
+    }
     for (let i = number_array.length - 1; i >= 0; i--) {
-      console.log(number_array[i])
+      console.log(number_array[i]);
     }
 </script>
 </body>
