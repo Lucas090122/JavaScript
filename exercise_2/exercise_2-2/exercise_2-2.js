@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>exercise_2-2</title>
-</head>
-<body>
-<ol id="list"></ol>
-<script>
-    const number = prompt('How many participants?');
+const number = prompt('How many participants?');
     let participants = [];
     for (let i = 0; i < number; i++) {
       participants.push(prompt('Enter name'));
@@ -16,6 +7,3 @@
     for (let name of participants) {
       document.querySelector('#list').appendChild(document.createElement('li')).textContent = name;
     }
-</script>
-</body>
-</html>
