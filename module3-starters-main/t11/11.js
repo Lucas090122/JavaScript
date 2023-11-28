@@ -121,6 +121,7 @@ for (let image of picArray) {
     large_img.setAttribute('alt', `large size ${image['caption']}`);
     dialog.showModal();
     let span = document.querySelector('span');
+    span.style.cursor = 'pointer';
     span.addEventListener('click', function() {
       large_img.setAttribute('src', '');
       dialog.close();
