@@ -122,6 +122,7 @@ for (let image of picArray) {
     dialog.showModal();
     let span = document.querySelector('span');
     span.addEventListener('click', function() {
+      large_img.setAttribute('src', '');
       dialog.close();
     })
   })
