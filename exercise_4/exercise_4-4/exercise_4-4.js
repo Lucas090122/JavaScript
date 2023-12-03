@@ -17,10 +17,9 @@ form.addEventListener('submit', async function(event) {
     a_link.innerHTML = `${item['show']['url']}`;
     let img_container = document.createElement('div');
     let img = document.createElement('img');
+    img.setAttribute('src', 'https://via.placeholder.com/210x295?text=Not%20Found');
     if (item.show.image && item.show.image.medium) {
     img.setAttribute('src', `${item['show']['image']['medium']}`);
-    } else {
-    img.setAttribute('src', 'https://via.placeholder.com/210x295?text=Not%20Found');
     }
     img.setAttribute('alt', `${item['show']['name']}`);
     img_container.appendChild(img)
